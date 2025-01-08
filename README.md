@@ -24,3 +24,33 @@ I am passionate about solving complex problems, optimizing processes, and genera
 
 ## Stats Explorer Summary NBA
 
+The world of basketball has evolved over the years, with more specialized training, players preparing at an earlier age, and an increasingly competitive level of play. Therefore, it is essential for teams and talent scouts to stay aligned with the offensive and defensive trends showcased by the world's top teams and players. This app will enable users to identify trends changes and analyze players' performance across different seasons, while also facilitating high-level comparisons and groupings based on their respective statistics.
+
+#### [Link-App](https://nbastats-summary.onrender.com/)
+
+### Key Questions
+
+- How has the percentage of shot attempts by area changed over the seasons?
+- How have teams evolved in their shot selection?
+- How is the impact of players distributed based on their age?
+- How have shooting percentages evolved by player position across different seasons?
+
+### Technologies and Methodology
+
+1. Web Scraper: Initially, the goal was to gather as much information as possible about NBA players and teams across all seasons. Using ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) and the bs4 module, data was extracted from the official NBA website to collect statistics deemed relevant for building the project’s outputs and models.
+
+2. Data Storage and Management: To store the data extracted from the website, ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) was used to tabulate the information, enabling better management and manipulation of the data thanks to the comprehensive methods provided by this library. Currently, the extracted data is temporarily stored in ![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white) files. However, a database is being designed to enable more professional storage and easier access to the collected information.
+
+4. Application and Visualization of Data: To create an application accessible to anyone, the Dash ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white) module was used. This framework allows the development of robust and scalable web applications, enabling continuous improvements in both aesthetics and performance.
+
+5. Version Controller: To maintain a changelog and implement a version control system, Git was used through GitHub Desktop. This approach optimizes the application of changes and facilitates code corrections.
+
+### Next Steps
+
+1. Automating the process of information extraction and loading into a suitable database management system.
+2. Implement more statistics to compare the different eras for both teams and players.
+3. Create the following models:
+   * A model that allows to classify players into categories based on their performance in order to make use of this information criteria at the time of giving any of these labels to a player.
+   * A model that can estimate the number of victories that a team can obtain according to the statistics that it obtains in different rules of the game.
+
+**Explore more details and the project code in the [complete repository](https://github.com/jarof13/AppNBA.git).**
